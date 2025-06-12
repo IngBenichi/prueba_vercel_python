@@ -10,4 +10,4 @@ def home():
 
 # Este bloque es necesario para que Vercel detecte el handler
 def handler(environ, start_response):
-    return app(environ, start_response)
+    return app.wsgi_app(environ, start_response)
